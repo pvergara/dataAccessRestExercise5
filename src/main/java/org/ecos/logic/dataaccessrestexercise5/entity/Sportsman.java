@@ -1,17 +1,20 @@
 package org.ecos.logic.dataaccessrestexercise5.entity;
 
+import jakarta.xml.bind.annotation.XmlRootElement;
+
 @SuppressWarnings("unused")
-public class Sportman {
+@XmlRootElement
+public class Sportsman {
     private int id;
     private String name;
     private String sport;
     private boolean isActive;
     private String genre;
 
-    public Sportman() {
+    public Sportsman() {
     }
 
-    public Sportman(int id, String name, String sport, boolean isActive, String genre) {
+    public Sportsman(int id, String name, String sport, boolean isActive, String genre) {
         this.id = id;
         this.name = name;
         this.sport = sport;
